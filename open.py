@@ -16,11 +16,11 @@ def main(argv):
             sys.exit()
         elif opt in ("-i", "--ifile"):
             inputfile = arg
-        results = YoutubeSearch(inputfile, max_results=10).to_dict()
-        
-        
-        ans = 'https://youtu.be/' + results[0]['url_suffix'][9:]
-        print(ans)
+        elif opt in ("-o", "--ifile"):
+            numberfile = arg
+    results = YoutubeSearch(inputfile, max_results=int(numberfile)).to_dict()    
+    ans = 'https://youtu.be/' + results[int(numberfile)-1]['url_suffix'][9:]
+    print(ans)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

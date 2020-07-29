@@ -35,4 +35,14 @@ All you have to do is launch spotitube.sh and give it a string argument with the
 ./spotitube.sh "Song name"
 ```
 
+If you want to get a specific index of a result, just type that index as a second argument:
+
+```shell
+./spotitube.sh "Song name" 3
+```
+This will result in:
+```
+Searching for result #3 in Song name...
+```
+
 Enjoy your music!
