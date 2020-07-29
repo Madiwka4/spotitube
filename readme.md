@@ -2,12 +2,13 @@
 
 Basically, a tool to listen to music using YouTube search results.
 # Instalation
-FOR ARCH USERS ONLY STEP (SKIP IF OTHER OS):
+This only supports Debian and Arch.
 ```shell
 chmod +x dependencies.sh
 ./dependencies.sh
 ```
 This will install the required dependencies (skip next step)
+
 
 # Prerequisites
 
@@ -21,11 +22,18 @@ Arch:
 sudo pacman -S python3 python-pip
 pip install youtube-search
 ```
+
 Debian/ubuntu:
 ```shell
-sudo apt install python3 pip3
-pip3 install youtube-search
+    sudo apt remove youtube-dl
+    sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+    sudo chmod a+rx /usr/local/bin/youtube-dl
+    youtube-dl -U
+    sudo apt install python3 python3-pip mpv
+    pip3 install youtube-search 
+    chmod +x spotitube.sh 
 ```
+The Debian package of youtube-dl is old and doesnt play videos anymore. That is why you should use wget to install it manually. 
 
 # Usage
 
