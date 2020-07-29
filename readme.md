@@ -4,7 +4,7 @@ Basically, a tool to listen to music using YouTube search results.
 # Instalation
 FOR ARCH USERS ONLY STEP (SKIP IF OTHER OS):
 ```shell
-cmod +x dependencies.sh
+chmod +x dependencies.sh
 ./dependencies.sh
 ```
 This will install the required dependencies (skip next step)
