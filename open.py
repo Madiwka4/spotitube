@@ -4,15 +4,15 @@ import sys, getopt
 
 def main(argv):
     inputfile = ''
-    outputfile = ''
+    numberfile = ''
     try:
         opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
     except getopt.GetoptError:
-        print ('spotitube.py -i <Search Keyword>')
+        print ('spotitube.py -i <Search Keyword> -o <Index>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print ('test.py -i <inputfile> -o <outputfile>')
+            print ('spotitube.py -i <Search Keyword> -o <Index>')
             sys.exit()
         elif opt in ("-i", "--ifile"):
             inputfile = arg

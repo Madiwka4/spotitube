@@ -1,7 +1,7 @@
 # Spotitube
 
 Basically, a tool to listen to music using YouTube search results.
-# Instalation
+# Installation
 This only supports Debian and Arch.
 ```shell
 chmod +x dependencies.sh
@@ -19,8 +19,9 @@ This app requires python3, pip3, and youtube-search python module to function pr
 
 Arch:
 ```shell
-sudo pacman -S python3 python-pip
-pip install youtube-search
+    sudo pacman -S python3 python-pip mpv youtube-dl
+    pip install youtube-search
+    chmod +x spotitube.sh
 ```
 
 Debian/ubuntu:
